@@ -1,0 +1,116 @@
+body{
+    margin: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a1bdcf;
+}
+
+.encabezado{
+    background-color: #062f4b;
+    padding: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover{
+    color: #67a2c9;
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(91, 169, 221);
+    color: #ffffff;
+    font-size: 0 rem;
+    cursor: pointer;
+    transition: all ease .5s;
+    
+}
+
+.btn:hover{
+    background-color: #073742;
+}
+
+.perfilDoctor{
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.nombreDoctor{
+    color: #064f61;
+    font-size: 18px;
+}
+
+.especialidadDoctor{
+    color: #073642;
+    font-size: 15px;
+}
+
+.descripcion{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.opiniones{
+    padding: 30px;
+    margin: 30px;
+}
+
+.cuadrosOpiniones{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta{
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 1);
+    transition: all .3s ease;
+    text-align: center;
+}
+
+.tarjeta:hover{
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: #03232b;
+}
+
+@media (max-width: 768px) {
+
+    .cuadrosOpiniones {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+}
